@@ -1,0 +1,404 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #353335;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.header {
+  height: 60px;
+  position: absolute;
+  top: 0;
+  background: #ffffff;
+
+}
+
+.hero {
+  position: relative;
+  background: #F8E1BF url(../img/sammy-leigh-scholl-157445-unsplash.jpg) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(to top, rgb(214, 172, 126) 0%, rgba(214, 172, 126, 0) 100%);
+}
+
+.hero__info {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.hero__info-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .hero__info-inner {
+    max-width: 400px;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+
+.hero__headline {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  margin: 0;
+  color: #353335;
+  max-width: 400px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.main-cta {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  background: #353335;
+  color: #e3eff4;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 0 20px;
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+}
+
+.services-list__item {
+  margin-top: 1rem;
+}
+
+.services-list__item:first-child {
+  margin-left: 0;
+}
+
+.services-list__link {
+  color: #353335;
+}
+
+.service-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.service-layout--inverted {
+  flex-direction: row-reverse;
+}
+
+.service-layout__heading {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 1rem 0 0;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .service-layout__heading {
+    margin: 0;
+  }
+}
+
+.service-layout__image {
+  flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+  .service-layout__image {
+    flex: 0 0 24%;
+    margin-right: 3%;
+  }
+}
+
+.service-layout__description {
+  flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+  .service-layout__description {
+    flex: 0 0 73%;
+  }
+}
+
+.service-layout__description p {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.service-layout__cta-block {
+  margin-top: 1rem;
+}
+
+.service-layout__img {
+  height: 200px;
+}
+
+.map {
+  position: relative;
+
+}
+
+@media (min-width: 768px) {
+  .map {
+    height: 400px;
+  }
+}
+
+.map__initiator {
+
+}
+
+@media (min-width: 768px) {
+  .map__initiator {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+
+.map__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.map__info {
+  background: #ffffff;
+  padding: 50px;
+}
+
+@media (min-width: 768px) {
+  .map__info {
+    width: 300px;
+    padding: 50px;
+    position: absolute;
+    left: 20px;
+    top: 60px;
+  }
+}
+
+.contacts {
+
+}
+
+.contacts__title {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+}
+
+.contacts__address {
+  margin: 1rem 0 0;
+}
+
+.contacts__get-taxi {
+  margin: 1rem 0 0;
+}
+
+.footer {
+  background: #353335;
+  color: #e3eff4;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  padding: 3rem 20px 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.prices {
+  background: #353335;
+  color: #e3eff4;
+  padding: 2rem 0 4rem;
+}
+
+.prices__inner {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.prices__title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  margin: 0;
+  text-align: center;
+}
+
+.price-table {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.price-table__column {
+  flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+  .price-table__column {
+    flex: 1;
+    max-width: 400px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .price-table__column:first-child {
+    margin-right: 40px;
+  }
+}
+
+.price-table__title {
+  margin: 1.5rem 0 0;
+  font-size: 1.6rem;
+}
+
+.prices-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.prices-list__item {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #353335 11px, transparent 1%) center, linear-gradient(#353335 18px, transparent 1%) center, #e3eff4;
+  background-size: 12px 19px;
+  background-position: 0 15px;
+}
+
+.prices-list__item-name,
+.prices-list__item-value {
+  background: #353535;
+}
+
+.prices-list__item-name {
+  padding-right: 5px;
+}
+
+.prices-list__item-value {
+  padding-left: 5px;
+}
+
+.footer__menu-link {
+  color: #72b2ff;
+  text-decoration: none;
+}
+
+.footer__logo {
+
+}
+
+@media (min-width: 768px) {
+  .footer__logo {
+    margin-right: 50px;
+  }
+}
+
+.footer__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer__menu {
+    width: auto;
+  }
+}
+
+.footer__menu-item {
+  margin-top: 0.5rem;
+}
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer__link {
+    margin: 0 0 0 50px;
+    width: auto;
+  }
+}
+
+
+.footer__links-item {
+  margin-top: 0.5rem;
+}
+
+.footer__link {
+  color: #72b2ff;
+  text-decoration: none;
+}
+
+.footer__phone {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer__phone {
+    margin-left: auto;
+    width: auto;
+    text-align: left;
+  }
+}
+
+.phone-btn {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #72b2ff;
+  color: #72b2ff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0 20px;
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+}
