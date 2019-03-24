@@ -118,11 +118,13 @@ body {
 }
 
 .service-layout__page-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   border: none;
   margin: 0;
   padding: 0;
-
+  background: transparent;
   width: 12px;
   height: 12px;
   position: relative;
